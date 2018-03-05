@@ -1,9 +1,5 @@
 const PROP_BLOCKLIST = new Set(['children', 'type']);
 
-function styleToString(style) {
-  return JSON.stringify(style);
-}
-
 function typeToTag(type) {
   return type.charAt(0).toUpperCase() + type.slice(1);
 }
