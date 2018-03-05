@@ -4,14 +4,14 @@
 
 Generate react primitves from DOM nodes. 
 
-```
+```sh
 npm i @brainly/html-react-primitives
 ```
 
 ### Input
 Any static or dynamic page.
 
-```
+```html
 <div class="box">
     <img src="https://example.com/cat.png" />
     <span class="label">Cat Image</span>
@@ -21,7 +21,7 @@ Any static or dynamic page.
 ### Code
 Runs in the (headless?) browser.
 
-```
+```javascript
 import {nodeToJSX, nodeToJSON} from 'html-react-primitives';
 
 const box = document.querySelector('.box');
@@ -33,7 +33,7 @@ const jsonOutput = nodeToJSON(box);
 ### Output
 
 #### JSX
-```
+```jsx
 <View style={{backgroundColor: 'blue', width: 480, …}}>
   <Image source={"https://example.com/image.png"}/>
   <Text style={{ fontFamily: 'Comic Sans MS', … }}/>Cat Image</Text>
@@ -41,7 +41,7 @@ const jsonOutput = nodeToJSON(box);
 ```
 
 #### JSON
-```
+```json
 {
     type: 'view',
     style: {
