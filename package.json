@@ -1,0 +1,24 @@
+{
+  "name": "@brainly/html-react-primitives",
+  "description": "Convert DOM nodes to react primitives",
+  "author": "Brainly - Konrad Dzwinel <konrad.dzwinel@brainly.com>",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainly/html-react-primitives.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brainly/html-react-primitives/issues"
+  },
+  "homepage": "https://github.com/brainly/html-react-primitives#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "frontend-tools-configs": "git+https://github.com/brainly/frontend-tools-configs.git"
+  }
+}
