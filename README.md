@@ -1,5 +1,7 @@
 # html-react-primitives
 
+**WORK IN PROGRESS - not production ready**
+
 Generate react primitves from DOM nodes. 
 
 ```

@@ -11,7 +11,7 @@ function typeToTag(type) {
 function propsToString(primitive) {
   return Object.keys(primitive)
     .filter(key => !PROP_BLOCKLIST.has(key))
-    .map(key => `${key}=${JSON.stringify(primitive[key])}`)
+    .map(key => `${key}={${JSON.stringify(primitive[key])}}`)
     .join(' ');
 }
 
@@ -23,7 +23,7 @@ function primitiveToString(primitive) {
   ${primitive.children.map(child => primitiveToString(child))}
 </${typeToTag(primitive.type)}>`;
   } else {
-    return `<${typeToTag(primitive.type)} ${propsToString(primitive)}>`;
+    return `<${typeToTag(primitive.type)} ${propsToString(primitive)} />`;
   }
 }
 
