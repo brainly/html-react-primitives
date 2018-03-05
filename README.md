@@ -36,12 +36,12 @@ const jsonOutput = nodeToJSON(box);
 ```jsx
 <View style={{backgroundColor: 'blue', width: 480, …}}>
   <Image source={"https://example.com/image.png"}/>
-  <Text style={{ fontFamily: 'Comic Sans MS', … }}/>Cat Image</Text>
+  <Text style={{ fontFamily: 'Comic Sans MS', … }}>Cat Image</Text>
 </View>
 ```
 
 #### JSON
-```json
+```javascript
 {
     type: 'view',
     style: {
